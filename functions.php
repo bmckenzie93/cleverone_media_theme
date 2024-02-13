@@ -5,6 +5,7 @@
         wp_enqueue_style('clever-bootstrap-css', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css", array(), '5.3.2', 'all');
         wp_enqueue_style('clever-fontawesome', "https://kit.fontawesome.com/75bc144dac.js", array(), '1.0', 'all');
         wp_enqueue_style('clever-style-css', get_template_directory_uri() . "/style.css", array('clever-bootstrap-css'), $version, 'all');
+        wp_enqueue_style('clever-main-css', get_template_directory_uri() . "/assets/css/main.css", array('clever-style-css'), $version, 'all');
     }
     add_action( 'wp_enqueue_scripts', 'clever_register_styles' );
 
@@ -62,4 +63,11 @@
         );
     }
     add_action( 'widgets_init', 'clever_widget_areas' );
+
+
+    // REGISTER ACF BLOCKS
+    function clever_register_acf_blocks() {
+        register_block_type( __DIR__ . '/blocks/hero' );
+    }
+    add_action( 'init', 'clever_register_acf_blocks' );
 ?>

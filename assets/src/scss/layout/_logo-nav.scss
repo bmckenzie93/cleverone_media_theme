@@ -1,0 +1,18 @@
+.logo-nav {
+    background-color: transparent;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 20px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+}

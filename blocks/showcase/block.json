@@ -1,0 +1,16 @@
+{
+    "name": "acf/showcase",
+    "title": "showcase Block",
+    "description": "A custom showcase block",
+    "style": [ "file:./showcase.css" ],
+    "category": "section",
+    "icon": "admin-comments",
+    "keywords": ["showcase", "section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "showcase.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

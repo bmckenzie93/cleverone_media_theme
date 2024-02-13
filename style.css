@@ -17,29 +17,3 @@
 
 */
 
-body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.nav-item > a {
-    display: block;
-    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-    font-size: var(--bs-nav-link-font-size);
-    font-weight: var(--bs-nav-link-font-weight);
-    color: var(--bs-nav-link-color);
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    
-}
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: var(--bs-navbar-active-color);
-}
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav a {
-        padding-right: var(--bs-navbar-nav-link-padding-x);
-        padding-left: var(--bs-navbar-nav-link-padding-x);
-    }
-}
