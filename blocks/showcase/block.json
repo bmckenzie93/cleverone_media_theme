@@ -1,6 +1,6 @@
 {
     "name": "acf/showcase",
-    "title": "showcase Block",
+    "title": "Showcase Block",
     "description": "A custom showcase block",
     "style": [ "file:./showcase.css" ],
     "category": "section",

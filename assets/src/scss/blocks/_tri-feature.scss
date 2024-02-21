@@ -1,0 +1,27 @@
+.tri-feature {
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        column-gap: 100px;
+        row-gap: 30px;
+    }
+
+    li {
+        text-align: center;
+        min-height: 250px;
+    }
+
+    img {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+
+
+    p {
+        font-size: 20px;
+    }
+
+
+}

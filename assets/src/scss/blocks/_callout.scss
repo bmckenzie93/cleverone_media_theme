@@ -1,0 +1,25 @@
+.callout {
+    background-color: $color-white;
+    padding: 120px 20px;
+    text-align: center;
+
+    img {
+        height: 100px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+    
+    .button {
+        margin-bottom: 0;
+    }
+
+    &.secondary {
+        background-color: lightblue;
+    }
+}

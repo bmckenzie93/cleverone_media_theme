@@ -1,0 +1,16 @@
+{
+    "name": "acf/split-quote",
+    "title": "Split Quote Block",
+    "description": "A custom split-quote block",
+    "style": [ "file:./split-quote.css" ],
+    "category": "section",
+    "icon": "admin-comments",
+    "keywords": ["split-quote", "section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "split-quote.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

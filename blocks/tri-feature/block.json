@@ -1,0 +1,16 @@
+{
+    "name": "acf/tri-feature",
+    "title": "Triple Feature Block",
+    "description": "A custom triple feature block",
+    "style": [ "file:./tri-feature.css" ],
+    "category": "section",
+    "icon": "admin-comments",
+    "keywords": ["tri-feature", "section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tri-feature.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,16 +1,16 @@
 <?php
 /**
- * Testimonial Block template.
+ * Hero Block template.
  *
  * @param array $block The block settings and attributes.
  */
 
-$title = !empty(get_field( 'hero-title' )) ? get_field( 'hero-title' ) : 'Your title here...';
-$subTitle = !empty(get_field( 'hero-subtitle' )) ? get_field( 'hero-subtitle' ) : 'Your subtitle here...';
-$cta = !empty(get_field( 'hero-cta' )) ? get_field( 'hero-cta' ) : 'Your cta here...';
-$message = !empty(get_field( 'hero-message' )) ? get_field( 'hero-message' ) : 'Your message here...';
-$leftGarnish = !empty(get_field( 'hero-message' )) ? get_field( 'hero-message' ) : 'Your message here...';
-$message = !empty(get_field( 'hero-message' )) ? get_field( 'hero-message' ) : 'Your message here...';
+$title = !empty(get_field( 'title' )) ? get_field( 'title' ) : null;
+$subTitle = !empty(get_field( 'subtitle' )) ? get_field( 'subtitle' ) : null;
+$button = !empty(get_field( 'button' )) ? get_field( 'button' ) : null;
+$text = !empty(get_field( 'text' )) ? get_field( 'text' ) : null;
+$leftGarnish = !empty(get_field( 'left-garnish' )) ? get_field( 'left-garnish' ) : null;
+$rightGarnish = !empty(get_field( 'right-garnish' )) ? get_field( 'right-garnish' ) : null;
 
 
 
@@ -21,28 +21,21 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className"
-$class_name = 'hero';
+$class_name = 'hero-block';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
 ?>
 
-    <!-- HERO SECTION -->
-    <section <?php echo esc_attr( $anchor ); ?> class="hero-section <?php echo esc_attr( $class_name ); ?>" >
+    <!-- HERO BLOCK -->
+    <section <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" >
         <div class="container">
-            <h1>
-                <?= $title ?>
-            </h1>
-            <p>
-                <?= $subTitle ?>
-            </p>
-            <a href="#" class="button">
-                <?= $cta ?>
-            </a>
-            <small>
-                <?= $message ?>
-            </small>
+            <?= !empty($title) ? '<h1>' . $title .'</h1>' : null ?>
+            <?= !empty($subTitle) ? '<p>' . $subTitle .'</p>' : null ?>
+            <?= !empty($button) ? "<a href='{$button['link']}' class='button'>'{$button['text']}'</a>" : null ?>
+            <?= !empty($text) ? '<small>' . $text .'</small>' : null ?>
         </div>
         <img class="hero-bg-left" src="<?= get_template_directory_uri() ?>/assets/images/cloud-1.png" alt="cloud one">
         <img class="hero-bg-right" src="<?= get_template_directory_uri() ?>/assets/images/cloud-1.png" alt="cloud two">
     </section>
+    <!-- END HERO BLOCK -->

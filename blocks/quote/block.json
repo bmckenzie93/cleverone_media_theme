@@ -1,0 +1,16 @@
+{
+    "name": "acf/quote",
+    "title": "Quote Block",
+    "description": "A custom quote block",
+    "style": [ "file:./quote.css" ],
+    "category": "section",
+    "icon": "admin-comments",
+    "keywords": ["quote", "section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "quote.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

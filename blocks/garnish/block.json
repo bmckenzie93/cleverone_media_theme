@@ -1,0 +1,16 @@
+{
+    "name": "acf/garnish",
+    "title": "Garnish Block",
+    "description": "A custom garnish block",
+    "style": [ "file:./garnish.css" ],
+    "category": "section",
+    "icon": "admin-comments",
+    "keywords": ["garnish", "section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "garnish.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

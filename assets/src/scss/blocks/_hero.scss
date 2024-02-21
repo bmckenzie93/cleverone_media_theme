@@ -1,26 +1,8 @@
-.hero-section {
-    background-image: linear-gradient(to top, #f4f4f4 30%, peachpuff 70%);
+.hero-block {
+    background-image: linear-gradient(to top, $color-primary 30%, $color-secondary 70%);
     padding: 200px 20px 60px;
     text-align: center;
     position: relative;
-
-    h1 {
-        font-size: 80px;
-        letter-spacing: 4px;
-    } 
-
-    p {
-        font-size: 24px;
-        letter-spacing: 1px;
-        margin-bottom: 20px;
-    }
-
-    small {
-        font-size: 13px;
-        letter-spacing: 1px;
-        display: block;
-    }
-
 
     .hero-bg-left {
         height: 484px;

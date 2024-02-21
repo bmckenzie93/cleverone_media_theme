@@ -1,0 +1,16 @@
+{
+    "name": "acf/callout",
+    "title": "Callout Block",
+    "description": "A custom callout block",
+    "style": [ "file:./callout.css" ],
+    "category": "section",
+    "icon": "admin-comments",
+    "keywords": ["callout", "section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "callout.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,11 +1,36 @@
 {
-    "key": "group_65caa7ccb622c",
-    "title": "Block: Hero",
+    "key": "group_65cc02d43c302",
+    "title": "Block: Callout",
     "fields": [
         {
-            "key": "field_65caa7ccb55ae",
-            "label": "Title",
-            "name": "title",
+            "key": "field_65d6544f26078",
+            "label": "Icon",
+            "name": "icon",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_65cc02d43dbc6",
+            "label": "Main Text",
+            "name": "main-text",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -23,11 +48,11 @@
             "append": ""
         },
         {
-            "key": "field_65caaef9b55af",
-            "label": "Subtitle",
-            "name": "subtitle",
+            "key": "field_65cc02d43dbd1",
+            "label": "Sub Text",
+            "name": "sub-text",
             "aria-label": "",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -38,54 +63,14 @@
             },
             "default_value": "",
             "maxlength": "",
+            "rows": "",
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": ""
         },
         {
-            "key": "field_65cacac06d3c2",
+            "key": "field_65d6548926079",
             "label": "Call To Action",
             "name": "button",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_65cacae06d3c3",
-            "label": "Text",
-            "name": "text",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_65cbf724312d3",
-            "label": "Garnish Images",
-            "name": "garnish-images",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -96,14 +81,14 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
+            "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_65cbf73d312d4",
-                    "label": "Left Garnish",
-                    "name": "left-garnish",
+                    "key": "field_65d654d62607a",
+                    "label": "text",
+                    "name": "text",
                     "aria-label": "",
-                    "type": "image",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -112,23 +97,18 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium"
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 },
                 {
-                    "key": "field_65cbf76a312d5",
-                    "label": "Right Garnish",
-                    "name": "right-garnish",
+                    "key": "field_65d654ee2607b",
+                    "label": "Link",
+                    "name": "link",
                     "aria-label": "",
-                    "type": "image",
+                    "type": "url",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -137,16 +117,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium"
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -156,7 +128,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/hero"
+                "value": "acf\/callout"
             }
         ]
     ],
@@ -169,5 +141,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708552846
+    "modified": 1708546261
 }

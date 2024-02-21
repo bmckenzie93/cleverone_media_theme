@@ -1,0 +1,16 @@
+{
+    "name": "acf/scrollby",
+    "title": "Scrollby Block",
+    "description": "A custom scrollby block",
+    "style": [ "file:./scrollby.css" ],
+    "category": "section",
+    "icon": "admin-comments",
+    "keywords": ["scrollby", "section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "scrollby.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,48 @@
+.quote-block {
+    margin: 60px 0 120px;
+
+    .container {
+        position: relative;
+    }
+
+    blockquote {
+        background-color: $color-primary;
+        min-height: 320px;
+        width: 100%;
+        padding: 0px 30px 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .quotation-container img {
+        height: 100px;
+    }
+
+    p {
+        font-size: 36px;
+        max-width: 530px;
+    }
+
+    .icon-container img {
+        height: 100px;
+    }
+
+    .left-garnish {
+        position: absolute;
+        bottom: -16px;
+        left: -50px;
+        width: 200px;
+    }
+
+    .right-garnish {
+        position: absolute;
+        top: -32px;
+        right: -61px;
+        width: 150px;
+    }
+
+}

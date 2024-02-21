@@ -1,16 +1,13 @@
 <?php
 /**
- * Testimonial Block template.
+ * Showcase Block template.
  *
  * @param array $block The block settings and attributes.
  */
 
-$title = !empty(get_field( 'hero-title' )) ? get_field( 'hero-title' ) : 'Your title here...';
-$subTitle = !empty(get_field( 'hero-subtitle' )) ? get_field( 'hero-subtitle' ) : 'Your subtitle here...';
-$cta = !empty(get_field( 'hero-cta' )) ? get_field( 'hero-cta' ) : 'Your cta here...';
-$message = !empty(get_field( 'hero-message' )) ? get_field( 'hero-message' ) : 'Your message here...';
-$leftGarnish = !empty(get_field( 'hero-message' )) ? get_field( 'hero-message' ) : 'Your message here...';
-$message = !empty(get_field( 'hero-message' )) ? get_field( 'hero-message' ) : 'Your message here...';
+$slides = !empty(get_field( 'slides' )) ? get_field( 'slides' ) : 'Your slides here...';
+
+
 
 
 
@@ -21,28 +18,31 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className"
-$class_name = 'hero';
+$class_name = 'showcase';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
 ?>
 
-    <!-- HERO SECTION -->
-    <section <?php echo esc_attr( $anchor ); ?> class="hero-section <?php echo esc_attr( $class_name ); ?>" >
-        <div class="container">
-            <h1>
-                <?= $title ?>
-            </h1>
-            <p>
-                <?= $subTitle ?>
-            </p>
-            <a href="#" class="button">
-                <?= $cta ?>
-            </a>
-            <small>
-                <?= $message ?>
-            </small>
+    <!-- SHOWCASE BLOCK -->
+    <section <?php echo esc_attr( $anchor ); ?> class="showcase <?php echo esc_attr( $class_name ); ?>" >
+        <div class="sticker">
+            <div class="sticker-container">
+                <span>Latest<br>projects</span>
+            </div>
         </div>
-        <img class="hero-bg-left" src="<?= get_template_directory_uri() ?>/assets/images/cloud-1.png" alt="cloud one">
-        <img class="hero-bg-right" src="<?= get_template_directory_uri() ?>/assets/images/cloud-1.png" alt="cloud two">
+        <ul class="showcase-track">
+            <?php
+                if( !empty($slides)) {
+                    foreach( $slides as $slide ) {
+                        echo "
+                            <li>
+                                <img src='$slide[url]' alt=''>
+                            </li>
+                        ";
+                    }
+                }
+            ?>
+        </ul>
     </section>
+    <!-- END SHOWCASE BLOCK -->
